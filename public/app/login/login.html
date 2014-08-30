@@ -1,0 +1,33 @@
+<h1>login.html</h1>
+
+<div>
+
+	<p>
+		You can use the following usernames and passwords to log in. 
+	</p>
+
+	<table>
+		<tr><th>Username</th><th>Password</th><th>Roles</th></tr>
+		<tr><td>admin</td><td>admin</td><td>[authenticated, admin]</td></tr>
+		<tr><td>user</td><td>user</td><td>[authenticated]</td></tr>
+	</table>
+
+	<p>
+		Enter the desired username and password below:
+	</p>
+
+	<form>
+		<div>
+			Username: <input type="text" ng-model="username" />
+		</div>
+		<div>
+			Password: <input type="password" ng-model="password" />
+		</div>
+		<div>
+			<button ng-click="login()">Login</button>
+		</div>
+	</form>
+
+</div>
+
+<ng-include src="'app/menu.html'" />

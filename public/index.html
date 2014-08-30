@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="rbaApp">
+<head>
+	<title>RBA Application</title>
+</head>
+<body>
+
+	<div ui-view>
+		index.html
+	</div>
+
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-cookies/angular-cookies.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+	<!-- Application definition -->
+	<script src="app/app.js"></script>
+
+    <!-- Services -->
+	<script src="app/services/pages-service.js"></script>
+	<script src="app/services/principal-service.js"></script>
+	<script src="app/services/authorization-service.js"></script>
+
+	<!-- Controllers -->
+	<script src="app/login/login-ctrl.js"></script>
+	
+	<!-- Application support definitions -->
+	<script src="app/app-routes.js"></script>
+	<script src="app/app-run.js"></script>
+
+</body>
+</html>

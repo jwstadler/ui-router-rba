@@ -1,0 +1,27 @@
+{
+  "name": "ui-router-rba",
+  "version": "0.0.1",
+  "description": "A basic implementation of an angular site that uses ui-router and applies role based authentication.",
+  "authors": [
+    "Jason Stadler <jasonstadler@gmail.com>"
+  ],
+  "main": "app.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/scripts/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.23",
+    "angular-ui-router": "~0.2.11",
+    "angular-cookies": "~1.2.23"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ui-router-rba",
+  "version": "0.0.1",
+  "description": "A basic implementation of an angular site that uses ui-router and applies role based authentication.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Stadler",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-connect": "^2.0.6"
+  }
+}
