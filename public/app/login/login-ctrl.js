@@ -1,17 +1,18 @@
 angular.module('rbaApp').controller('LoginCtrl', 
-	['$scope', 'principal', function($scope, principal) {
+	['$scope', '$q', 'principal', function($scope, $q, principal) {
 	
 	$scope.username = null;
 	$scope.password = null;
 
 	$scope.login = function() {
 
-		principal
+		return principal
 			.login({ username: $scope.username, password: $scope.password })
 			.then(
 				null,
 				function(response) {
 					alert('Login failed');
+					return $q.reject(response);
 				}
 			);
 	};

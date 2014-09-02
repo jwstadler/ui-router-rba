@@ -1,5 +1,5 @@
 angular.module('rbaApp').service('authorization', 
-	[ '$state', function($state) {
+	[ function() {
 
 	const self = this;
 

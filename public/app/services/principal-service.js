@@ -1,6 +1,6 @@
 angular.module('rbaApp').service('principal', 
-	['$state', '$http', '$cookieStore', 'pages', '$q', '$timeout', 
-	function($state, $http, $cookieStore, pages, $q, $timeout) {
+	['$cookieStore', 'pages', '$q', '$timeout', 
+	function($cookieStore, pages, $q, $timeout) {
 
 	const self = this;
 
@@ -66,7 +66,8 @@ angular.module('rbaApp').service('principal',
 	// url.
 	this.login = function(credentials) {
 
-		// Use timeout to fake out the rest call
+		// Use timeout to fake out the rest call. You should inject
+		// $http and mke the appropriate call.
 		var deferred = $q.defer();
 		$timeout(function() {
 			if (credentials.username == 'admin' && credentials.password == 'admin') {
